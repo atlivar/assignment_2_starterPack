@@ -4,16 +4,16 @@ import axios from "axios";
    CONFIG
 ========================= */
 
-// Part A (remote quotes API)
+
 const QUOTES_API_BASE = "https://veff-2026-quotes.netlify.app/api/v1";
 
-// Part B (local backend)
+
 const LOCAL_API_BASE = "http://localhost:3000/api/v1";
 const TASKS_URL = `${LOCAL_API_BASE}/tasks`;
 const NOTES_URL = `${LOCAL_API_BASE}/notes`;
 
 /* =========================
-   TODAY’S TASKS
+   TODAY’S TASKS FEATURE
 ========================= */
 
 const renderTasks = (tasks) => {
@@ -104,7 +104,7 @@ const wireTaskEvents = () => {
 };
 
 /* =========================
-   QUICK NOTES
+   QUICK NOTES FEATURE
 ========================= */
 
 let lastSavedNotes = "";
@@ -155,7 +155,7 @@ const wireNotesEvents = () => {
 };
 
 /* =========================
-   QUOTE FEATURE (PART A)
+   QUOTE FEATURE 
 ========================= */
 
 const loadQuote = async (category = "general") => {
